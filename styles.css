@@ -84,6 +84,8 @@
 .shadow {
   filter: drop-shadow(20px 20px 30px darkgrey);
 }
+
+
 .culoarea {
   color: #d3d9d4;
 }
@@ -195,14 +197,40 @@
 .gold:visited,
 .gold:focus {
   background-color: #8d734b;
+  border-color: #8d734b;
   color: white;
 }
 .gold:hover {
   color: black;
   background-color: #8d734b;
+  border-color: #8d734b;
+}
+
+.gold2,
+.gold2:active,
+.gold2:visited,
+.gold2:focus {
+  background-color: #140d07;
+  border-color: #8d734b;
+  color: white;
+}
+.gold2:hover {
+  color: #140d07;;
+  background-color: #8d734b;
+  border-color: #8d734b;
 }
 
 h2 {
   font-family: "Cormorant", serif;
   font-size: 5vh;
+}
+
+.gold-text{
+  color: #8d734b;
+}
+
+.amenities-icon{
+  width: 42px;
+  height: 42px;
+  margin-right: 42pt;
 }
