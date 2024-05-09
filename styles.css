@@ -1,0 +1,208 @@
+.background {
+  background-color: #ebebeb;
+}
+
+.dark-brown {
+  background-color: #140d07;
+}
+
+.header {
+  position: sticky;
+}
+
+.logo {
+  border-radius: 50%;
+  margin: 0px;
+  padding: 0%;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: lightblue;
+}
+
+.piombino-image {
+  filter: brightness(80%);
+  background: url("/App files/img/home/background/piombino.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #1a1918;
+}
+
+.casa1-image {
+  filter: brightness(80%);
+  background: url("/App files/img/casa1/background/dorm.webp");
+  background-size: cover;
+  background-position: center;
+  color: #1a1918;
+}
+
+.casa2-image {
+  filter: brightness(80%);
+  background: url("/App files/img/casa2/background/background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #1a1918;
+}
+
+.activities-image {
+  filter: brightness(80%);
+  background: url("/App files/img/activities/background/cocktails.webp");
+  background-size: cover;
+  background-position: center;
+  color: #1a1918;
+}
+.bright {
+  color: white;
+}
+
+.map {
+  height: 280px;
+}
+
+.map-big {
+  height: 400px;
+}
+
+#map {
+  filter: grayscale(70%);
+}
+
+.card-left {
+  display: flex;
+  justify-content: left;
+}
+
+.card-right {
+  display: flex;
+  justify-content: right;
+}
+
+.shadow {
+  filter: drop-shadow(20px 20px 30px darkgrey);
+}
+.culoarea {
+  color: #d3d9d4;
+}
+
+.slide-from-left {
+  position: relative;
+  filter: blur(10px);
+  left: -100%; /* Start off-screen to the left */
+  animation: slideInFromLeft 2s ease forwards; /* Animation */
+}
+
+/* Define the animation */
+@keyframes slideInFromLeft {
+  to {
+    filter: blur(0);
+    left: 0; /* Move to the center of the screen */
+  }
+}
+.slide-from-right {
+  position: relative;
+  filter: blur(5px);
+  left: 100%; /* Start off-screen to the right */
+  animation: slideInFromRight 2s ease forwards; /* Animation */
+}
+
+/* Define the animation */
+@keyframes slideInFromRight {
+  to {
+    filter: blur(0);
+    left: 0; /* Move to the center of the screen */
+  }
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+}
+
+/* Style for the sticky element */
+@media (max-width: 991px) {
+  .sticky-left {
+    z-index: -5;
+    opacity: 0;
+    position: absolute;
+  }
+  .vanish {
+    display: none;
+  }
+}
+
+.vertical {
+  display: flex;
+  transform-origin: 50%;
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Style for the sticky element */
+@media (min-width: 992px) {
+  .sticky-left {
+    position: fixed;
+    top: 40%;
+    left: 0;
+    width: 80px; /* Adjust width as needed */
+    height: 48vh; /* Make it full height of the viewport */
+    background-color: #8d734b;
+    padding: 10px;
+    z-index: 10;
+  }
+}
+
+.contact-info {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center-align the content horizontally */
+  gap: 18px; /* Add some space between items */
+  color: white; /* Set text color to white */
+}
+
+.contact-item {
+  text-align: left; /* Center-align the content within each item */
+}
+
+.contact-item span {
+  display: block; /* Each label on a new line */
+}
+
+.contact-item a {
+  color: white; /* Inherit text color from parent */
+  text-decoration: none; /* Add underline to links */
+  font-size: 20px; /* Make the label text bold */
+}
+.grey {
+  filter: grayscale(10%);
+}
+
+/* .gold {
+  background-color: #8d734b;
+  color: #8d734b;
+} */
+
+.gold,
+.gold:active,
+.gold:visited,
+.gold:focus {
+  background-color: #8d734b;
+  color: white;
+}
+.gold:hover {
+  color: black;
+  background-color: #8d734b;
+}
+
+h2 {
+  font-family: "Cormorant", serif;
+  font-size: 5vh;
+}
