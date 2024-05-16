@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const reservationForm = document.getElementById("reservationForm");
 
   reservationForm.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent default form submission
+    event.preventDefault();
 
-    // Collect form data
+    // Colectam datele din formular
     const formData = {
       lastname: document.getElementById("lastname").value,
       name: document.getElementById("name").value,
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
       message: document.getElementById("message").value,
     };
 
-    // Send form data to server
+    // Trimitem datele din formular catre server
     fetch("https://server-2gcr.onrender.com/sendEmail", {
       method: "POST",
       headers: {
@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((response) => {
         if (response.ok) {
           alert("Reservation submitted successfully!");
-          // Optionally, reset the form after successful submission
           window.close();
         } else {
           throw new Error("Failed to submit reservation.");

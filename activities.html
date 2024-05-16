@@ -5,31 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Activities in Piombino</title>
 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 
-
-
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
-    />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="/styles.css">
 
   </head>
-  <body class="background">
-    <div class="header dark-brown sticky-top ">
+  <body>
+    <header class="dark-brown sticky-top ">
       <div class="container">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#"> 
+            <a class="navbar-brand" href="./index.html"> 
               <img
                 src="/App files/svg/logo.jpg "
                 alt="Aquadro logo"
@@ -56,11 +48,11 @@
                   <a class="nav-link text-light" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item m-2">
-                  <a class="nav-link text-light" href="./casa1.html">The Appartment</a>
+                  <a class="nav-link text-light" href="./casa1.html">Apartment 1</a>
                 </li>
-                <!-- <li class="nav-item m-2">
-                  <a class="nav-link text-light" href="./casa2.html">Appartment 2</a>
-                </li> -->
+                <li class="nav-item m-2">
+                  <a class="nav-link text-light" href="./casa2.html">Apartment 2</a>
+                </li>
                 <li class="nav-item m-2">
                   <a class="nav-link gold-text" href="./activities.html"
                   >Activities in Piombino</a
@@ -74,10 +66,8 @@
                   <button type="button" class="btn gold2" >
                   Book on Airbnb
                 </button>
-                </a>
-                
-              </li>
-        
+                </a>                
+              </li>        
               <li class="nav-item m-2">
                 <a 
                 target="_blank"
@@ -86,46 +76,43 @@
                   <button type="button" class="btn gold" >
                   BOOK WITH US
                 </button>
-                </a>
-                
+                </a>               
               </li>
             </ul>
             </div>
           </div>
         </nav>
       </div>
-    </div>
-
-    <div class="py-0">
-      <div class="p-5 mb-4 bg-body-tertiary activities-image">
-        <div class="container container-fluid py-5">
-          <h1 class="display-3 fw-bold bright slide-from-right">Go out</h1>
-          <p class="col-md-8 fs-2 bright slide-from-left">Enjoy yourself</p>
+    </header>
+    <main>
+      <div class="py-0">
+        <div class="p-5 mb-4 bg-body-tertiary activities-image">
+          <div class="container container-fluid py-5">
+            <h1 class="display-3 fw-bold slide-from-right">Go out</h1>
+            <p class="col-md-8 fs-2 slide-from-left">Enjoy yourself</p>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="sticky-left vertical shadow">
-      <!-- Content of the sticky element -->
-      <div class="contact-info ">
-        <div class="contact-item">
-
-          <a href="tel:+393453281610">+39 345 328 1610</a>
-          <span>Call Us:</span>
-        </div>
-        <div class="contact-item ">
-
-          <a href="mailto:aquadrocasavacanze@gmail.com">aquadrocasavacanze@gmail.com</a>
-          <span>Email Us:</span>
+  
+      <div class="sticky-left vertical shadow">
+        <div class="contact-info ">
+          <div class="contact-item">
+            <a href="tel:+393453281610">+39 345 328 1610</a>
+            <span>Call Us:</span>
+          </div>
+          <div class="contact-item ">
+            <a href="mailto:aquadrocasavacanze@gmail.com">aquadrocasavacanze@gmail.com</a>
+            <span>Email Us:</span>
+          </div>
         </div>
       </div>
-    </div>
+
+
     <div class="container marketing">
       <div class="row featurette py-5 ">
         <div class="col-md-7 hidden left">
           <h2 class="featurette-heading fw-normal lh-1 ">
             What to do and where to eat
-            <!-- <span class="text-body-secondary"></span> -->
           </h2>
           <p class="lead">
             Even if Piombino's nightlife might not be the one that you find in Ibiza <br />
@@ -143,12 +130,12 @@
             role="img"
             preserveAspectRatio="xMidYMid slice"
             focusable="false"
-            src="./App files/img/activities/500x500/city.webp" >
+            src="./App files/img/activities/500x500/city.webp" 
+            alt="narrow typical italia street">
         </img>
         </div>
         </div>
  </div>      
- <!-- start -->
  
  <hr class="featurette-divider" />
  <div id="eat" class="text-center text-body-emphasis">
@@ -156,33 +143,32 @@
  </div>
  <hr class="featurette-divider" />
  <div class=" text-center">
-     <div class=" py-1 ">
+     <div class=" py-1">
        <h4 class="text-body-emphasis hidden left">DaLuca Ristorante Enoteca Piombino</h4>
-       <p class="col-lg-8 mx-auto lead container hidden  left">
-         "In pieno centro nel corso Vittorio Emanuele II.
-         Accoglienza, cortesia e grande scelta di piatti, la combinazione perfetta per chi ama trascorrere una piacevole serata e mangiare bene. Ottimo cibo con cura nella presentazione e ricca carta dei vini. Possibilità di accomodarsi all’aperto mantenendo la giusta distanza dalla “movida” del Corso principale. Irene la Chef insieme a Jucy sapranno rendere la vostra un’esperienza indimenticabile!!"
+       <p class="col-lg-8 mx-auto lead  hidden  left">
+        "In the heart of Corso Vittorio Emanuele II. Warm hospitality, courtesy, and a wide selection of dishes, the perfect combination for those who love to spend a pleasant evening and eat well. Excellent food with attention to presentation and a rich wine list. The possibility to sit outdoors while maintaining a proper distance from the bustling nightlife of the main street. Chef Irene, along with Jucy, will ensure your experience is unforgettable!"
        </p>
-       <img src="./App files/img/activities/3840x720/da-luca-ristorante.jpg" class="img-fluid shadow hidden fade-in" alt="images of salivoli beach">
+       <img src="./App files/img/activities/3840x720/da-luca-ristorante.jpg" class="img-fluid shadow hidden fade-in" alt="three images of food one next to the other">
      </div>
    </div>
    <hr class="featurette-divider" />
    <div class=" text-center">
        <div class=" py-1">
          <h4 class="text-body-emphasis hidden left">I Tretruschi Srl</h4>
-         <p class="col-lg-8 mx-auto lead container hidden left">
-           "Attaccato al parco archeologico di Baratti con una splendida vista sul medesimo golfo. Il ristorante è gestito sapientemente da Fabio e Gaetano. Ottima la grigliata di mare e buoni i dolci. Sono aperti tutti i giorni sia per pranzo che cena"
+         <p class="col-lg-8 mx-auto lead hidden left">
+          "Located near the archaeological park of Baratti with a splendid view of the same gulf. The restaurant is skillfully managed by Fabio and Gaetano. The seafood grill is excellent, and the desserts are delightful. They are open every day for both lunch and dinner."
          </p>
-         <img src="./App files/img/activities/3840x720/tretruschi-restaurant.jpg" class="img-fluid shadow hidden fade-in" alt="images of salivoli beach">
+         <img src="./App files/img/activities/3840x720/tretruschi-restaurant.jpg" class="img-fluid shadow hidden fade-in" alt="three images one next to the other two with seafood and one from the woods">
        </div>
      </div>
      <hr class="featurette-divider" />
      <div class=" text-center">
          <div class=" py-1">
            <h4 class="text-body-emphasis hidden left">Pizzeria Da Egidio</h4>
-           <p class="col-lg-8 mx-auto lead container hidden left">
-             "Ottima la pizza, la Carbonara di pesce e tanto altro. A pochi passi da Aquadro casa vacanze"
+           <p class="col-lg-8 mx-auto lead hidden left">
+            "The pizza is excellent, as is the seafood Carbonara and much more. Just a few steps away from Aquadro holiday home."
            </p>
-           <img src="./App files/img/activities/3840x720/big-jo.jpg" class="img-fluid shadow hidden fade-in" alt="images of salivoli beach">
+           <img src="./App files/img/activities/3840x720/big-jo.jpg" class="img-fluid shadow hidden fade-in" alt="three images of food one next to the other">
          </div>
        </div>
         <hr class="featurette-divider" />
@@ -193,21 +179,20 @@
  <div class=" text-center">
      <div class=" py-1">
        <h4 class="text-body-emphasis hidden left">Salivoli</h4>
-       <p class="col-lg-8 mx-auto lead container hidden left">
-         "Marina di Salivoli è una delle poche spiagge di Piombino fatte interamente di sabbia e frequentata sia da famiglie con bambini piccoli che da ragazzi.
-         Situata nei pressi del Porto Turistico: la spiaggia si presenta di piccole dimensioni e composta da sabbia chiara e ciottoli. Allontanandosi dal centro cittadino si incontra invece una delle più belle spiagge della Val di Cornia: Cala Moresca"
+       <p class="col-lg-8 mx-auto lead hidden left">
+        "Marina di Salivoli is one of the few beaches in Piombino entirely made of sand and frequented by both families with young children and young people. Located near the Tourist Port, the beach is small and composed of light sand and pebbles. Moving away from the city center, you'll encounter one of the most beautiful beaches in the Val di Cornia: Cala Moresca."
        </p>
-       <img src="./App files/img/activities/3840x720/salivoli.jpg" class="img-fluid shadow hidden fade-in" alt="images of salivoli beach">
+       <img src="./App files/img/activities/3840x720/salivoli.jpg" class="img-fluid shadow hidden fade-in" alt="three images of salivoli beach one next to the other">
      </div>
    </div>
  <hr class="featurette-divider" />
 <div class=" text-center">
     <div class=" py-1">
       <h4 class="text-body-emphasis hidden left">Calamoresca</h4>
-      <p class="col-lg-8 mx-auto lead container hidden left">
-        "Calamoresca è un piccolo golfo, del promontorio di Piombino una delle più belle spiagge cittadine della Val di Cornia, molto conosciuta e frequentata da turisti oltre che dai piombinesi. Questo che potremmo tranquillamente definire un autentico “fazzoletto di Caraibi” si distingue per un acqua limpida che alla sera fa da perfetto scenario a un magnifico e romantico tramonto con vista su Elba e Gorgona. In loco sono presenti servizi quali bar, ristorante e stabilimento balneare."
+      <p class="col-lg-8 mx-auto lead hidden left">
+        "Calamoresca is a small gulf, one of the most beautiful urban beaches in the Val di Cornia, well-known and frequented by tourists as well as locals. This could easily be described as an authentic 'Caribbean gem,' distinguished by its clear water that in the evening sets the perfect stage for a magnificent and romantic sunset overlooking Elba and Gorgona. On-site amenities include a bar, restaurant, and bathing establishment."
       </p>
-      <img src="./App files/img/activities/3840x720/cala-moresca.jpg" class="img-fluid shadow hidden fade-in" alt="images of cala moresca">
+      <img src="./App files/img/activities/3840x720/cala-moresca.jpg" class="img-fluid shadow hidden fade-in" alt="three images of calamoresca beach one next to the other">
     </div>
   </div>
   <hr class="featurette-divider" />
@@ -218,106 +203,104 @@
 <div class=" text-center">
     <div class=" py-1">
       <h4 class="text-body-emphasis hidden left">Tenuta Poggio Rosso</h4>
-      <p class="col-lg-8 mx-auto lead container hidden left">
+      <p class="col-lg-8 mx-auto lead hidden left">
         
-"La Tenuta Poggio Rosso è situata nella parte più occidentale della Val di Cornia, nel territorio di Populonia, una delle più grandi ed importanti città etrusche e romane.
-La Tenuta Poggio Rosso attraverso visite guidate in azienda e degustazioni permette a tutti coloro che lo desiderano, di entrare in contatto con la sua bellissima realtà, espressione unica e significativa della Val di Cornia.
-La visita di durata di circa 1 ora comprende la visita dei vigneti, della cantina di vinificazione e della barriccaia e si conclude con la degustazione dei vini di nostra produzione.
-Le visite guidate in azienda si effettuano previa prenotazione telefonica al +39.0565.29553 o con e-mail a commerciale@tenutapoggiorosso.it, tramite i quali potrete ricevere anche informazioni su costi e orari.""
+        "Tenuta Poggio Rosso is located in the western part of the Val di Cornia, in the territory of Populonia, one of the largest and most important Etruscan and Roman cities. Through guided tours and tastings, Tenuta Poggio Rosso offers everyone the opportunity to connect with its beauty, a unique and significant expression of the Val di Cornia. The approximately 1-hour tour includes visits to the vineyards, the wine cellar, and the barrel room, concluding with a tasting of the wines. Guided tours are available by prior reservation via phone at +39.0565.29553 or by email at 
+        <a target=”_blank” href="mailto: commerciale@tenutapoggiorosso.it">commerciale@tenutapoggiorosso.it</a>, where you can also inquire about costs and reservation."
       </p>
-      <img src="./App files/img/activities/3840x720/tenuta-poggio-rosso.jpg" class="img-fluid shadow hidden fade-in" alt="images of cala moresca">
+      <img src="./App files/img/activities/3840x720/tenuta-poggio-rosso.jpg" class="img-fluid shadow hidden fade-in" alt="three images attached, two with wine barrels and one with a sunset">
     </div>
   </div>
   <hr class="featurette-divider" />
   <div class=" text-center">
       <div class=" py-1">
         <h4 class="text-body-emphasis hidden left">Società Agricola Petra</h4>
-        <p class="col-lg-8 mx-auto lead container hidden left">
-          "Prima ancora di essere una cantina, Petra è un'oasi naturale che si estende su 300 ettari comprendendo la cintura verde delle Colline Metallifere, il Parco di Montioni, la Riserva Poggio Tre Cancelli e il Parco della Sterpaia, affacciato sul Mar Tirreno. In questo particolare ecosistema prende vita il sogno enologico di Francesca Moretti e della sua famiglia, pionieri in Franciacorta con la cantina Bellavista e il resort L'Albereta. Scoprire la cantina e la tenuta significa immergersi nella storia di un progetto attraversandone tutte le tappe, dalla nascita delle prime vigne sino alla forma architettonica che ha preso indirizzo da un pensiero di profondo rispetto per l'identità del luogo. Dalle pratiche agricole sino a quelle produttive, tutto è ispirato ad un principio di massima naturalezza e il design della cantina in fondo non è altro che la sua espressione simbolica più pura.
-          
-          Tre percorsi diversi, ma per ognuno di essi la certezza di entrare nel cuore di una cantina che ha fatto del segno architettonico l'espressione più immediata e sincera del suo approccio enologico ad un angolo di Toscana inedito.
-          
-          PETRA CLASSIC, PETRA UNDER THE TUSCAN SUN e PETRA EXPERIENCE sono i nomi delle tre proposte. La disponibilità di tempo è il fattore chiave che li differenzia. Se nel corso di un'ora e mezza potrete immergervi nel mondo di Petra per conoscerne tutti gli aspetti essenziali, - dalla vigna sino ai vini più rappresentativi -, con due ore o, ancora meglio, con tre ore di tempo, sarete in grado di riconoscere le sfumature della natura e del gusto in un crescendo di emozioni e sorprese che di volta in volta cambiano a seconda delle stagioni e delle novità di prodotto."
+        <p class="col-lg-8 mx-auto lead hidden left">
+          "Before being a winery, Petra is a natural oasis that extends over 300 hectares, encompassing the green belt of the Metalliferous Hills, Montioni Park, Poggio Tre Cancelli Reserve, and Sterpaia Park, overlooking the Tyrrhenian Sea. In this unique ecosystem, Francesca Moretti and her family's dreams come to life, pioneers in Franciacorta with Bellavista Winery and L'Albereta Resort. Exploring the winery and estate means delving into the history of a project, traversing all its stages, from the birth of the first vines to the architectural form shaped by a profound respect for the place's identity. From agricultural practices to production, everything is inspired by a principle of utmost naturalness, and the winery's design is ultimately its purest symbolic expression. Three different paths, but for each, the certainty of entering the heart of a winery that has made architectural signature the most immediate and sincere expression of its oenological approach to an unprecedented corner of Tuscany. PETRA CLASSIC, PETRA UNDER THE TUSCAN SUN, and PETRA EXPERIENCE are the names of the three offerings. The availability of time is the key factor that sets them apart. While in an hour and a half you can immerse yourself in the world of Petra to learn all its essential aspects, - from the vineyard to the most representative wines -, with two hours or, even better, with three hours, you'll be able to recognize the nuances of nature and taste in a crescendo of emotions and surprises that change depending on the seasons and product novelties."
         </p>
-        <img src="./App files/img/activities/3840x720/societa-agricola-petra.jpg" class="img-fluid shadow hidden fade-in" alt="images of cala moresca">
+        <img src="./App files/img/activities/3840x720/societa-agricola-petra.jpg" class="img-fluid shadow hidden fade-in" alt="three images attached, two with wine barrels and one with a landscape of a winery">
       </div>
-    </div>
-<!-- finish -->
-
-
-
-   
+    </div> 
 
       <hr class="featurette-divider" />
     <div id="map" class="map-big shadow"></div>
+  </main>
     <div class="dark-brown fixed-bottom">
-        <div class="container  ">
-  
-  
-          <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 ">
-  
-  
-            <ul class="nav col-md-4 justify-content-start list-unstyled d-flex grey">
-              <li class="ms-3">
-                <a 
-                aria-label="Chat on WhatsApp" 
-                href="https://wa.me/393453281610"
-                target="_blank">
-                  <img alt="Chat on WhatsApp" src="./App files/svg/whatsapp-svgrepo-com.svg" width="36" height="32">
-                </a>
-            </li>
-  
-              <li class="ms-3">
-                <a
-                  target="”_blank”"
-                  href="mailto: aquadrocasavacanze@gmail.com"
-                >
-                <img src="./App files/svg/mail-svgrepo-com.svg" alt="tripadvisor logo" width="36" height="36">
-                </a>
-              </li>
-              <li class="ms-3">
-                <a
-                  target="”_blank”"
-                  href="https://www.facebook.com/profile.php?id=100068308672091"
-                >
-                <img src="./App files/svg/facebook.svg" alt="tripadvisor logo" width="36" height="36">
-                </a>
-              </li>
-              <li class="ms-3">
-                <a
-                  target="”_blank”"
-                  href="https://www.instagram.com/aquadrocasavacanze/"
-                >
-                <img src="./App files/svg/instagram-1-svgrepo-com.svg" alt="tripadvisor logo" width="36" height="36">
-                </a>
-              </li>
-              <li class="ms-3">
-                <a
-                  target="”_blank”"
-                  href="https://www.tripadvisor.com/VacationRentalReview-g187900-d23413441-Aquadro_Casa_Vacanze-Piombino_Province_of_Livorno_Tuscany.html""
-                >
-                <img src="./App files/svg/tripadvisor-logo-svgrepo-com.svg" alt="tripadvisor logo" width="36" height="36">
-                </a>
-              </li>
-            </ul>
-  
-              <p class="pt-3 vanish">Copyright © 2024. All rights reserved.</p>
-  
-          </footer>
-        </div>
-      </div>
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-1 container"
+      >
+        <ul class="nav col-md-4 justify-content-start list-unstyled d-flex">
+          <li class="ms-3">
+            <a
+              aria-label="Chat on WhatsApp"
+              href="https://wa.me/393453281610"
+              target="_blank"
+            >
+              <img
+                alt="WhatsApp icon"
+                src="./App files/svg/whatsapp-svgrepo-com.svg"
+                width="28"
+                height="28"
+              />
+            </a>
+          </li>
+          <li class="ms-3">
+            <a target="_blank" href="mailto: aquadrocasavacanze@gmail.com">
+              <img
+                src="./App files/svg/mail-svgrepo-com.svg"
+                alt="email icon"
+                width="28"
+                height="28"
+              />
+            </a>
+          </li>
+          <li class="ms-3">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=100068308672091"
+            >
+              <img
+                src="./App files/svg/facebook.svg"
+                alt="facebook icon"
+                width="28"
+                height="28"
+              />
+            </a>
+          </li>
+          <li class="ms-3">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/aquadrocasavacanze/"
+            >
+              <img
+                src="./App files/svg/instagram-1-svgrepo-com.svg"
+                alt="instagram icon"
+                width="28"
+                height="28"
+              />
+            </a>
+          </li>
+          <li class="ms-3">
+            <a
+              target="_blank"
+              href="https://www.tripadvisor.com/VacationRentalReview-g187900-d23413441-Aquadro_Casa_Vacanze-Piombino_Province_of_Livorno_Tuscany.html"
+            >
+              <img
+                src="./App files/svg/tripadvisor-logo-svgrepo-com.svg"
+                alt="tripadvisor icon"
+                width="28"
+                height="28"
+              />
+            </a>
+          </li>
+        </ul>
+        <p class="pt-1 vanish text-secondary">Copyright © 2024. All rights reserved.</p>
+      </footer>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-    
-
-    <script
-      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-      crossorigin=""
-    ></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
     <script src="index.js"></script>
   </body>
-</div>
 </html>

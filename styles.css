@@ -1,13 +1,18 @@
-.background {
+body {
   background-color: #ebebeb;
+}
+
+h2 {
+  font-family: "Cormorant", serif;
+  font-size: 5vh;
+}
+
+.gold-text {
+  color: #8d734b;
 }
 
 .dark-brown {
   background-color: #140d07;
-}
-
-.header {
-  position: sticky;
 }
 
 .logo {
@@ -16,20 +21,12 @@
   padding: 0%;
 }
 
-.text-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: lightblue;
-}
-
 .piombino-image {
   filter: brightness(80%);
   background: url("/App files/img/home/background/piombino.jpg");
   background-size: cover;
   background-position: center;
-  color: #1a1918;
+  color: white;
 }
 
 .casa1-image {
@@ -37,7 +34,7 @@
   background: url("/App files/img/casa1/background/dorm.webp");
   background-size: cover;
   background-position: center;
-  color: #1a1918;
+  color: white;
 }
 
 .casa2-image {
@@ -45,7 +42,7 @@
   background: url("/App files/img/casa2/background/background.jpg");
   background-size: cover;
   background-position: center;
-  color: #1a1918;
+  color: white;
 }
 
 .activities-image {
@@ -53,9 +50,6 @@
   background: url("/App files/img/activities/background/cocktails.webp");
   background-size: cover;
   background-position: center;
-  color: #1a1918;
-}
-.bright {
   color: white;
 }
 
@@ -85,37 +79,32 @@
   filter: drop-shadow(20px 20px 30px darkgrey);
 }
 
-
-.culoarea {
-  color: #d3d9d4;
-}
-
 .slide-from-left {
   position: relative;
   filter: blur(10px);
-  left: -100%; /* Start off-screen to the left */
-  animation: slideInFromLeft 2s ease forwards; /* Animation */
+  left: -100%; /* incepem in afara ecranului la stanga */
+  animation: slideInFromLeft 2s ease forwards; /* animatia folosita */
 }
 
-/* Define the animation */
+/* definim animatia */
 @keyframes slideInFromLeft {
   to {
     filter: blur(0);
-    left: 0; /* Move to the center of the screen */
+    left: 0; /* miscare spre centrul ecranului */
   }
 }
 .slide-from-right {
   position: relative;
   filter: blur(5px);
-  left: 100%; /* Start off-screen to the right */
-  animation: slideInFromRight 2s ease forwards; /* Animation */
+  left: 100%; /* incepem in afara ecranului la dreapta */
+  animation: slideInFromRight 2s ease forwards; /* animatia folosita */
 }
 
-/* Define the animation */
+/* definim animatia */
 @keyframes slideInFromRight {
   to {
     filter: blur(0);
-    left: 0; /* Move to the center of the screen */
+    left: 0; /* miscare spre centrul ecranului  */
   }
 }
 
@@ -128,7 +117,7 @@
   opacity: 1;
 }
 
-/* Style for the sticky element */
+/* elementul fix din stanga */
 @media (max-width: 991px) {
   .sticky-left {
     z-index: -5;
@@ -149,48 +138,46 @@
   box-sizing: border-box;
 }
 
-/* Style for the sticky element */
+/* elementul fix din stanga */
 @media (min-width: 992px) {
   .sticky-left {
     position: fixed;
     top: 40%;
     left: 0;
-    width: 80px; /* Adjust width as needed */
-    height: 48vh; /* Make it full height of the viewport */
+    width: 80px;
+    height: 48vh;
     background-color: #8d734b;
     padding: 10px;
     z-index: 10;
   }
 }
 
+@media (max-height: 999px) {
+  .sticky-left {
+    display: none; /* ascundem elementul daca nu avem inaltime de minim 999 px */
+  }
+}
+
 .contact-info {
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Center-align the content horizontally */
-  gap: 18px; /* Add some space between items */
-  color: white; /* Set text color to white */
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  color: white;
 }
 
 .contact-item {
-  text-align: left; /* Center-align the content within each item */
+  text-align: left;
 }
 
 .contact-item span {
-  display: block; /* Each label on a new line */
+  display: block;
 }
 
 .contact-item a {
-  color: white; /* Inherit text color from parent */
-  text-decoration: none; /* Add underline to links */
-  font-size: 20px; /* Make the label text bold */
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
 }
-.grey {
-  filter: grayscale(10%);
-}
-
-/* .gold {
-  background-color: #8d734b;
-  color: #8d734b;
-} */
 
 .gold,
 .gold:active,
@@ -215,21 +202,12 @@
   color: white;
 }
 .gold2:hover {
-  color: #140d07;;
+  color: #140d07;
   background-color: #8d734b;
   border-color: #8d734b;
 }
 
-h2 {
-  font-family: "Cormorant", serif;
-  font-size: 5vh;
-}
-
-.gold-text{
-  color: #8d734b;
-}
-
-.amenities-icon{
+.amenities-icon {
   width: 42px;
   height: 42px;
   margin-right: 42pt;

@@ -51,7 +51,7 @@ window.addEventListener("load", (event) => {
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      console.log(entry);
+      // console.log(entry);
       if (entry.isIntersecting && entry.target.classList.contains("right")) {
         entry.target.classList.add("show");
         entry.target.classList.add("slide-from-right");
@@ -70,7 +70,7 @@ const observer = new IntersectionObserver(
     });
   },
   { root: null }
-); // Observe the entire document viewport
+); // Observam intregu viewport
 
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
