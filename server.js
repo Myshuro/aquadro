@@ -16,17 +16,8 @@ app.use(bodyParser.json());
 // Endpoint pentru gestionarea trimiterea formulrului
 app.post("/sendEmail", (req, res) => {
   // Extragerea datelor din request
-  const {
-    lastname,
-    name,
-    phone,
-    email,
-    people,
-    apartment,
-    checkin,
-    checkout,
-    message,
-  } = req.body;
+  const { lastname, name, phone, email, people, checkin, checkout, message } =
+    req.body;
 
   // compunem mesajul
   const mailOptions = {
@@ -39,7 +30,6 @@ app.post("/sendEmail", (req, res) => {
             <p><strong>Phone:</strong> ${phone}</p>
             <p><strong>Email:</strong> ${email}</p>
             <p><strong>Number of People:</strong> ${people}</p>
-            <p><strong>Apartment:</strong> ${apartment}</p>
             <p><strong>Check-in Date:</strong> ${checkin}</p>
             <p><strong>Check-out Date:</strong> ${checkout}</p>
             <p><strong>Message/Special Requests:</strong> ${message}</p>

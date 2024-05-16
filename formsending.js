@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
       phone: document.getElementById("phone").value,
       email: document.getElementById("email").value,
       people: document.getElementById("people").value,
-      apartment: document.getElementById("apartment").value,
       checkin: document.getElementById("checkin").value,
       checkout: document.getElementById("checkout").value,
       message: document.getElementById("message").value,
